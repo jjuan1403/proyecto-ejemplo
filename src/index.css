@@ -1,0 +1,58 @@
+
+body {
+  margin: 0;
+  padding: 2rem;
+  height: 100vh;
+  background: linear-gradient(135deg, #4c4d50, #141414); /* gris claro → gris oscuro */
+  font-family: "Poppins", sans-serif;
+  color: #111827;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tabla-inventario {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  background: #0f172a;
+  color: #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.tabla-inventario thead {
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+}
+
+.tabla-inventario th,
+.tabla-inventario td {
+  padding: 0.9rem 1.2rem;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.tabla-inventario th {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #f9fafb;
+}
+
+.tabla-inventario tbody tr:nth-child(even) {
+  background: #1e293b;
+}
+
+.tabla-inventario tbody tr:nth-child(odd) {
+  background: #0f172a;
+}
+
+.tabla-inventario tbody tr:hover {
+  background: #334155;
+  transition: background 0.2s ease;
+}
+
+.tabla-inventario td {
+  border-bottom: 1px solid #1e293b;
+}
